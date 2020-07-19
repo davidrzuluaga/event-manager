@@ -9,6 +9,7 @@ body {
   font-family: 'Lato', sans-serif;
   color: $fontDefault;
   margin: 20px;
+  font-weight: bold;
 }
 
 @import './views/Main/mainpage.scss';

@@ -3,7 +3,7 @@ import './card.scss';
 
 const Card = props => {
   return (
-    <div className="default card">
+    <div className={`default card ${props.className}`}>
       {props.title && <h3>{props.title}</h3>}
       <div className="main-content">{props.children}</div>
     </div>

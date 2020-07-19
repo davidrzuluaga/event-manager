@@ -9,4 +9,20 @@
     font-size: 17px;
     margin: 0;
   }
+  .top {
+    .localtime {
+      text-align: end;
+      font-size: 14px;
+    }
+  }
+  .rigth {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+  }
+  .left {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+  }
 }

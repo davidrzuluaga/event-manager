@@ -1,0 +1,35 @@
+.live-activities {
+  .event {
+    padding: 15px 0px;
+    > div {
+      display: inline-block;
+    }
+
+    .time {
+      width: 15%;
+      span {
+        display: block;
+        text-align: center;
+        font-size: 12px;
+      }
+    }
+    .middle {
+      width: 70%;
+      h3 {
+        font-size: 14px;
+        padding: 5px 0;
+      }
+      .subtitle {
+        padding: 0 0 5px 0;
+        font-size: 12px;
+      }
+    }
+    .attendees {
+      text-align: center;
+      width: 10%;
+      span {
+        display: block;
+      }
+    }
+  }
+}
