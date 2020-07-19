@@ -24,6 +24,9 @@ const LiveActivities = props => {
                 <span className="num">{activity.attendees}</span>
                 <span className="attendee">Attendees</span>
               </div>
+              <div className="arrow">
+                <span class="material-icons">keyboard_arrow_right</span>
+              </div>
             </div>
           </>
         ))}

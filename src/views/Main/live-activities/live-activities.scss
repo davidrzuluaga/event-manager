@@ -2,6 +2,7 @@
 
 .live-activities {
   .event {
+    cursor: pointer;
     padding: 15px 0px;
     > div {
       display: inline-block;
@@ -16,7 +17,7 @@
       }
     }
     .middle {
-      width: 70%;
+      width: 65%;
       h3 {
         font-size: 14px;
         padding: 5px 0;
@@ -50,10 +51,21 @@
     }
     .attendees {
       text-align: center;
-      width: 10%;
+      width: 15%;
+      vertical-align: super;
       span {
         display: block;
       }
+      .num {
+        color: $darkmagenta;
+        font: Bold 16px/19px Montserrat;
+      }
+      .attendee {
+        font-size: 12px;
+      }
+    }
+    .arrow {
+      width: 5%;
     }
   }
 }

@@ -1,9 +1,9 @@
 import React from 'react';
-import Card from './../../../components/card/card';
+import Card from '../../../components/card/card';
 import './active-attendees.scss';
 import { Line } from 'react-chartjs-2';
 
-const ActiveAttendees = props => {
+const Anouncements = props => {
   const data = canvas => {
     const ctx = canvas.getContext('2d');
     const gradient = ctx.createLinearGradient(0, 0, 0, 300);
@@ -50,4 +50,4 @@ const ActiveAttendees = props => {
     </Card>
   );
 };
-export default ActiveAttendees;
+export default Anouncements;

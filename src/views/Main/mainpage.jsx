@@ -2,6 +2,7 @@ import React from 'react';
 import Snackbar from '../../components/snackbar/snackbar';
 import LiveActivities from './live-activities/live-activities';
 import ActiveAttendees from './active-attendees/active-attendees';
+import Networking from './networking/networking';
 
 const information = {
   title: 'Live Event Analytics',
@@ -64,6 +65,7 @@ const Mainpage = () => {
       </div>
       <div className="rigth">
         <LiveActivities activities={information.activities} />
+        <Networking />
       </div>
     </div>
   );
