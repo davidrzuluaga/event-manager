@@ -1,0 +1,14 @@
+.default {
+  &.card {
+    box-shadow: 0 3px 6px #00000029;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: white;
+    h3 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap&family=Montserrat&');
+@import './components/scss/variables';
+@import './components/scss/default.scss';
+
+body {
+  background-color: #f6f6fa;
+}
+#root {
+  font-family: 'Lato', sans-serif;
+  color: $fontDefault;
+  margin: 20px;
+}
+
+@import './views/Main/mainpage.scss';
