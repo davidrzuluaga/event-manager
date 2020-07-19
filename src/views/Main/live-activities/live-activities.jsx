@@ -16,6 +16,9 @@ const LiveActivities = props => {
               <div className="middle">
                 <h3>{activity.title}</h3>
                 <div className="subtitle">{activity.subtitle}</div>
+                <div className="meter">
+                  <span style={{ width: `${activity.progress}%` }}></span>
+                </div>
               </div>
               <div className="attendees">
                 <span className="num">{activity.attendees}</span>

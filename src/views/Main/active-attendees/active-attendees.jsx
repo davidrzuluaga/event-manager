@@ -38,6 +38,7 @@ const ActiveAttendees = props => {
         height={300}
         options={{
           maintainAspectRatio: false,
+          elements: { line: { tension: 0 } },
           scales: {
             xAxes: [{ gridLines: { color: '#bfbfbf1a' } }],
             yAxes: [{ gridLines: { color: '#bfbfbf1a' } }]

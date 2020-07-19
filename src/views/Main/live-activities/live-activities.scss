@@ -1,3 +1,5 @@
+@import '../../../components/scss/variables';
+
 .live-activities {
   .event {
     padding: 15px 0px;
@@ -22,6 +24,28 @@
       .subtitle {
         padding: 0 0 5px 0;
         font-size: 12px;
+      }
+      .meter {
+        height: 5px;
+        width: 70%;
+        position: relative;
+        background: #d2d2d2;
+        -moz-border-radius: 25px;
+        -webkit-border-radius: 25px;
+        border-radius: 25px;
+        margin: 5px 0 0 0;
+        padding: 1px;
+      }
+      .meter > span {
+        display: block;
+        height: 100%;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background-color: $lightseagreen;
+        position: relative;
+        overflow: hidden;
       }
     }
     .attendees {

@@ -24,19 +24,22 @@ const information = {
       timerange: { start: '12:00 AM', end: '2:00 PM' },
       title: 'Name of the activity',
       subtitle: 'Evelyn J. Fields | CEO of Stay Green',
-      attendees: 800
+      attendees: 800,
+      progress: 80
     },
     {
       timerange: { start: '12:00 AM', end: '2:00 PM' },
       title: 'Name of the activity',
       subtitle: 'Evelyn J. Fields | CEO of Stay Green',
-      attendees: 800
+      attendees: 800,
+      progress: 30
     },
     {
       timerange: { start: '12:00 AM', end: '2:00 PM' },
       title: 'Name of the activity',
       subtitle: 'Evelyn J. Fields | CEO of Stay Green',
-      attendees: 800
+      attendees: 800,
+      progress: 50
     }
   ]
 };
