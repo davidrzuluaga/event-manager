@@ -25,7 +25,7 @@ const information = {
       subtitle: 'Ryan Cromwell',
       attendees: 800,
       progress: 80,
-      image: '/image/Ryan_Cromwell.png',
+      image: 'image/Ryan_Cromwell.png',
       comments: [
         {
           type: 'reaction',
@@ -71,7 +71,7 @@ const information = {
       timerange: { start: '12:00 AM', end: '2:00 PM' },
       title: 'Name of the activity',
       subtitle: 'Evelyn J. Fields | CEO of Stay Green',
-      image: '/image/Ryan_Cromwell.png',
+      image: 'image/Ryan_Cromwell.png',
       attendees: 800,
       progress: 30,
       comments: [
@@ -90,7 +90,7 @@ const information = {
       title: 'Name of the activity',
       subtitle: 'Evelyn J. Fields | CEO of Stay Green',
       attendees: 800,
-      image: '/image/Ryan_Cromwell.png',
+      image: 'image/Ryan_Cromwell.png',
       progress: 50,
       comments: [
         {
