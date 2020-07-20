@@ -18,5 +18,9 @@ body {
 .col-half {
   width: 50%;
 }
-
+@media only screen and (max-width: $phone) {
+  .col {
+    width: 100% !important;
+  }
+}
 @import './views/Main/mainpage.scss';

@@ -6,7 +6,7 @@
     padding: 15px 23px;
     border-radius: 10px;
     display: inline-block;
-    width: 37%;
+    width: 32%;
     border-left: 11px solid transparent;
     margin: 20px 20px;
     &:first-of-type,
@@ -34,6 +34,10 @@
       .subtitle {
         font-size: 12px;
       }
+    }
+    @media only screen and (max-width: $laptop) {
+      width: 70%;
+      margin: 10px;
     }
   }
 }

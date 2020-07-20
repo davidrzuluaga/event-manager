@@ -1,0 +1,14 @@
+@import '../../components/scss/variables';
+
+.live-activities-page {
+  @media only screen and (max-width: $laptop) {
+    .screen {
+      .picture {
+        width: 124px;
+        height: 111px;
+        bottom: 60px;
+        right: 12px;
+      }
+    }
+  }
+}

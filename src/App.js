@@ -2,7 +2,7 @@ import React from 'react';
 import './App.scss';
 import Mainpage from './views/Main/mainpage';
 import Header from './views/Home/header';
-import LiveActivitiesPage from './views/LiveActivities/screen/live-activities';
+import LiveActivitiesPage from './views/LiveActivities/live-activities';
 import NetworkingPage from './views/Networking/networking';
 
 const information = {
@@ -46,11 +46,49 @@ const information = {
       image: '/image/Ryan_Cromwell.png',
       progress: 50
     }
+  ],
+  meetings: [
+    {
+      owner: 'Juan Pablo Castillo',
+      status: 'waiting',
+      attendee: {
+        subtitle: 'CEO of Stay Green',
+        name: 'Ryan Cromwell',
+        image: 'image/Marius_Ciocirlan.png'
+      }
+    },
+    {
+      owner: 'Juan David Castillo',
+      status: 'ended',
+      attendee: {
+        subtitle: 'CEO of Stay Green',
+        name: 'Ryan Cromwell',
+        image: 'image/Marius_Ciocirlan.png'
+      }
+    },
+    {
+      owner: 'Juan Castillo',
+      status: 'progress',
+      attendee: {
+        subtitle: 'CEO of Stay Green',
+        name: 'Ryan Cromwell',
+        image: 'image/Marius_Ciocirlan.png'
+      }
+    },
+    {
+      owner: 'Juan Alejandro Castillo',
+      status: 'waiting',
+      attendee: {
+        subtitle: 'CEO of Stay Green',
+        name: 'Ryan Cromwell',
+        image: 'image/Marius_Ciocirlan.png'
+      }
+    }
   ]
 };
 
 function App() {
-  const [page, setPage] = React.useState({ page: 2, index: 0 });
+  const [page, setPage] = React.useState({ page: 0, index: 0 });
 
   const pages = () => {
     if (page.page === 1) {

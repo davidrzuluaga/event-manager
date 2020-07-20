@@ -21,6 +21,9 @@
       &.selected {
         border-bottom: 4px $darkmagenta solid;
       }
+      &:hover {
+        border-bottom: 4px rgba(139, 0, 139, 0.336) solid;
+      }
     }
   }
   .appointments {
@@ -81,6 +84,39 @@
         color: $darkmagenta;
         top: 44px;
         right: 25px;
+      }
+    }
+  }
+  @media only screen and (max-width: 1400px) {
+    .appointments {
+      .info {
+        .status {
+          top: 21px;
+          left: 12px;
+          position: absolute;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: $tablet) {
+    .appointments {
+      .appointment {
+        .info {
+          padding-top: 24px;
+        }
+        .participant {
+          margin: 0px 0px 0 38px;
+          .picture {
+            margin: inherit;
+          }
+          .description {
+            display: block;
+            width: 100%;
+            margin: 0 20px 0 10px;
+            font-size: 12px;
+            text-align: center;
+          }
+        }
       }
     }
   }
