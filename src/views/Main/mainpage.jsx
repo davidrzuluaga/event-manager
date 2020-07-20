@@ -20,7 +20,7 @@ const Mainpage = props => {
           setPage={props.setPage}
           activities={props.information.activities}
         />
-        <Networking />
+        <Networking setPage={props.setPage} />
       </div>
     </div>
   );

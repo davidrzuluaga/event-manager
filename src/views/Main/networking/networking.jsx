@@ -46,9 +46,9 @@ const Networking = props => {
         </div>
       </div>
       <div className="bottom">
-        <p>
+        <p onClick={() => props.setPage({ page: 2 })}>
           <span>View meetings live now</span>
-          <span class="material-icons">keyboard_arrow_right</span>
+          <span className="material-icons">keyboard_arrow_right</span>
         </p>
       </div>
     </Card>

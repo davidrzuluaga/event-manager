@@ -1,0 +1,87 @@
+@import '../../components/scss/variables';
+
+.network {
+  padding: 40px 20px 20px 40px;
+  .title {
+    margin: 10px 0 20px 0px;
+    .time {
+      color: $darkmagenta;
+      font-size: 14px;
+    }
+  }
+  .nav {
+    padding: 10px;
+    .tab {
+      font-size: 16px;
+      display: inline-block;
+      width: fit-content;
+      padding: 7px 7px 10px 7px;
+      margin: 0 20px;
+      cursor: pointer;
+      &.selected {
+        border-bottom: 4px $darkmagenta solid;
+      }
+    }
+  }
+  .appointments {
+    .appointment {
+      position: relative;
+      .info {
+        width: 30%;
+        display: inline-block;
+        .status {
+          margin: 0 10px;
+          padding: 3px 10px;
+          color: white;
+          border-radius: 15px;
+          &.waiting {
+            background-color: $goldenrod;
+          }
+          &.progress {
+            background-color: $lightseagreen;
+          }
+          &.ended {
+            background-color: $tomato;
+          }
+        }
+      }
+      .participant {
+        display: inline-block;
+        width: 25%;
+        vertical-align: middle;
+        .picture {
+          display: inline-block;
+          width: fit-content;
+          vertical-align: sub;
+          margin: 0 20px 0 30px;
+          .pic {
+            width: 50px;
+            display: inline-block;
+            height: 50px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+          }
+        }
+        .description {
+          display: inline-block;
+          vertical-align: super;
+          width: 60%;
+          font-size: 12px;
+          span {
+            display: block;
+            &.name {
+              color: $darkmagenta;
+            }
+          }
+        }
+      }
+      .menu {
+        position: absolute;
+        color: $darkmagenta;
+        top: 44px;
+        right: 25px;
+      }
+    }
+  }
+}

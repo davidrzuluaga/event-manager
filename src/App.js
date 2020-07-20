@@ -3,6 +3,7 @@ import './App.scss';
 import Mainpage from './views/Main/mainpage';
 import Header from './views/Home/header';
 import LiveActivitiesPage from './views/LiveActivities/screen/live-activities';
+import NetworkingPage from './views/Networking/networking';
 
 const information = {
   title: 'Live Event Analytics',
@@ -49,11 +50,13 @@ const information = {
 };
 
 function App() {
-  const [page, setPage] = React.useState({ page: 1, index: 0 });
+  const [page, setPage] = React.useState({ page: 2, index: 0 });
 
   const pages = () => {
     if (page.page === 1) {
       return <LiveActivitiesPage page={page} information={information} />;
+    } else if (page.page === 2) {
+      return <NetworkingPage page={page} information={information} />;
     } else {
       return <Mainpage setPage={setPage} information={information} />;
     }
