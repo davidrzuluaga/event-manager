@@ -11,7 +11,7 @@ const LiveActivitiesPage = props => {
         <Screen current={current} />
       </div>
       <div className="col" style={{ width: '35%' }}>
-        <Chat current={current} />
+        <Chat current={current} information={props.information} />
       </div>
     </div>
   );

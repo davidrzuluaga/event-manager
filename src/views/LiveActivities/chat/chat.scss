@@ -28,6 +28,7 @@
     background-color: white;
     .title {
       color: $darkmagenta;
+      display: block;
       font: Black 10px/21px Lato;
       padding-bottom: 5px;
     }
@@ -40,7 +41,7 @@
       text-align: end;
     }
     &.self {
-      margin: 0 0 0 5%;
+      margin-left: 5%;
       background-color: #d4d3d4;
       width: 85%;
     }
@@ -55,6 +56,9 @@
         font-size: 14px;
         font-weight: bolder;
         padding-right: 10px;
+      }
+      .content {
+        margin: 0;
       }
     }
   }

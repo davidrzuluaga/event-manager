@@ -19,6 +19,20 @@ const Screen = props => {
           <span class="material-icons">volume_up</span>
           <span class="material-icons">fullscreen</span>
         </div>
+        <div className="reactions">
+          <span aria-label="" role="img">
+            🙏
+          </span>
+          <span aria-label="" role="img">
+            👏
+          </span>
+          <span aria-label="" role="img">
+            👍
+          </span>
+          <span aria-label="" role="img">
+            ❤️
+          </span>
+        </div>
       </div>
     </div>
   );

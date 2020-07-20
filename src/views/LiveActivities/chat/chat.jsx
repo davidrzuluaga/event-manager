@@ -1,38 +1,36 @@
 import React from 'react';
 import './chat.scss';
 import Input from '../../../components/input/input';
+import moment from 'moment-timezone';
 
 const Chat = props => {
   return (
     <div className="chat">
       <div className="card">
-        <p className="title">Nombre de usuario</p>
-        <p className="content">Lorem ipsum dolor sit amet.</p>
+        <p className="title">{props.information.user.name}</p>
+        <p className="content">{props.information.user.description}</p>
       </div>
       <div className="messages">
-        <div className="card reaction">
-          <span className="title">Nombre de usuario</span>
-          <span className="content">reacted</span>
-        </div>
-        <div className="card self">
-          <p className="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla
-            aliquet enim tortor at auctor urna. Cursus vitae congue mauris
-            rhoncus aenean.
-          </p>
-          <p className="time">07:59 AM</p>
-        </div>
-        <div className="card">
-          <p className="content">
-            <p className="title">Nombre de usuario</p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla
-            aliquet enim tortor at auctor urna. Cursus vitae congue mauris
-            rhoncus aenean.
-          </p>
-          <p className="time">07:59 AM</p>
-        </div>
+        {props.current.comments &&
+          props.current.comments.map(comment => (
+            <div
+              className={`card ${comment.type} ${comment.self ? 'self' : ''}`}
+            >
+              <p className="content">
+                {(!comment.self || comment.type === 'reaction') && (
+                  <span className="title">{comment.name}</span>
+                )}
+                <span className="content">
+                  {comment.type === 'reaction' && 'reacted'} {comment.message}
+                </span>
+              </p>
+              {!comment.self && (
+                <p className="time">
+                  {moment(comment.time).tz('America/Denver').format('hh:mm a ')}
+                </p>
+              )}
+            </div>
+          ))}
       </div>
 
       <div className="options">
