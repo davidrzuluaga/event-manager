@@ -1,0 +1,14 @@
+.announcements {
+  margin: 5px 5% 0 5px;
+  textarea {
+    width: -webkit-fill-available;
+    width: 99%;
+    margin: 10px 0 0 0;
+  }
+  .publish {
+    button {
+      display: block;
+      margin: 10px 0 0 auto;
+    }
+  }
+}

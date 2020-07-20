@@ -1,0 +1,12 @@
+@import '../../components/scss/variables';
+.button {
+  background-color: $lightseagreen;
+  border: 0px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  padding: 8px 37px;
+  &:hover {
+    background-color: lightseagreen;
+  }
+}

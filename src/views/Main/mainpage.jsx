@@ -3,6 +3,7 @@ import Snackbar from '../../components/snackbar/snackbar';
 import LiveActivities from './live-activities/live-activities';
 import ActiveAttendees from './active-attendees/active-attendees';
 import Networking from './networking/networking';
+import Announcements from './anouncements/announcements';
 
 const information = {
   title: 'Live Event Analytics',
@@ -22,6 +23,7 @@ const information = {
   ],
   activities: [
     {
+      id: 1,
       timerange: { start: '12:00 AM', end: '2:00 PM' },
       title: 'Name of the activity',
       subtitle: 'Evelyn J. Fields | CEO of Stay Green',
@@ -29,6 +31,7 @@ const information = {
       progress: 80
     },
     {
+      id: 2,
       timerange: { start: '12:00 AM', end: '2:00 PM' },
       title: 'Name of the activity',
       subtitle: 'Evelyn J. Fields | CEO of Stay Green',
@@ -36,6 +39,7 @@ const information = {
       progress: 30
     },
     {
+      id: 3,
       timerange: { start: '12:00 AM', end: '2:00 PM' },
       title: 'Name of the activity',
       subtitle: 'Evelyn J. Fields | CEO of Stay Green',
@@ -62,6 +66,7 @@ const Mainpage = () => {
           <Snackbar information={info.content} color={info.color} />
         ))}
         <ActiveAttendees />
+        <Announcements />
       </div>
       <div className="rigth">
         <LiveActivities activities={information.activities} />
