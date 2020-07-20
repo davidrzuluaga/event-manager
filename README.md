@@ -1,4 +1,4 @@
-Sample project of a #Event Manager Board
+Sample project of a `Event Manager Board`
 
 In the project directory, you can run:
 
