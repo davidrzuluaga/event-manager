@@ -11,5 +11,12 @@ body {
   margin: 20px;
   font-weight: bold;
 }
+.col {
+  display: inline-block;
+  vertical-align: top;
+}
+.col-half {
+  width: 50%;
+}
 
 @import './views/Main/mainpage.scss';

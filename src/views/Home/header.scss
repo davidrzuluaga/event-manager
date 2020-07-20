@@ -1,0 +1,30 @@
+@import '../../components/scss/variables';
+
+header {
+  &.top {
+    .material-icons {
+      font-size: 37px;
+      color: $darkmagenta;
+      cursor: pointer;
+    }
+    div.title {
+      display: inline-block;
+      width: 90%;
+      cursor: pointer;
+      h1 {
+        font-size: 24px;
+        color: $darkmagenta;
+        font: Bold 24px/29px Montserrat;
+        margin: 0;
+      }
+      .subtitle {
+        font-size: 17px;
+        margin: 0;
+      }
+    }
+    .localtime {
+      text-align: end;
+      font-size: 14px;
+    }
+  }
+}

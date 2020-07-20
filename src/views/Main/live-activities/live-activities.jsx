@@ -6,9 +6,12 @@ const LiveActivities = props => {
   return (
     <Card title="Live Activities" className="live-activities">
       {props.activities &&
-        props.activities.map(activity => (
+        props.activities.map((activity, index) => (
           <>
-            <div className="event">
+            <div
+              className="event"
+              onClick={() => props.setPage({ page: 1, index })}
+            >
               <div className="time">
                 <span>{activity.timerange.start}</span>
                 <span>{activity.timerange.end}</span>
