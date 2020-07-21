@@ -12,8 +12,8 @@ const Chat = props => {
       </div>
       <div className="messages">
         {props.current.comments &&
-          props.current.comments.map(comment => (
-            <div
+          props.current.comments.map((comment,i) => (
+            <div key={i}
               className={`card ${comment.type} ${comment.self ? 'self' : ''}`}
             >
               <p className="content">

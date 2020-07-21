@@ -1,35 +1,23 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import App from './App';
+import Mainpage from './views/Main/mainpage';
+import information from './helpers/sample';
+
+let page = { page: 0, index: 0 };
 
 const AppComp = shallow(<App />);
+const MainpageComp = shallow(
+  <Mainpage page={page} information={information} />
+);
 
-it('renders Cards', () => {
-  expect(AppComp.find('Card').length).toBe(1);
+it('renders Mainpage', () => {
+  expect(AppComp.find('Mainpage').length).toBe(1);
 });
 
-/*describe('blog entries test', () => {
-  it("renders BlogEntries", () => {
-      const WelcomeComp = shallow(<Welcome />);
-      expect(WelcomeComp.find('BlogEntries').length).toBe(1);
-  });
-  
-  it("renders BlogRead items", () => {
-      const blogEntries = [{ picture: "", title: "title1", description: "description1" }]
-      const BlogEntriesComp = mount(<BlogEntries blogEntries={blogEntries} />);
-      const card = BlogEntriesComp.find('.card')
-      expect(card.length).toBe(1);
-      expect(card.contains(
-          <h2>title1</h2>,
-          <p>description1</p>,
-      )).toEqual(true);
-  });
-
-  it("render create a blog item", () => {
-      const UserEntriesComp = mount(<UserEntries />);
-      UserEntriesComp.find("button#create").last().simulate("click");
-      expect(UserEntriesComp.find("input")).toHaveLength(2);
-      expect(UserEntriesComp.find("textarea#description")).toHaveLength(1);
-      expect(UserEntriesComp.find("button#submit")).toHaveLength(1);
-  });
-});*/
+it('renders Cards', () => {
+  expect(MainpageComp.find('ActiveAttendees').length).toBe(1);
+  expect(MainpageComp.find('Announcements').length).toBe(1);
+  expect(MainpageComp.find('LiveActivities').length).toBe(1);
+  expect(MainpageComp.find('Networking').length).toBe(1);
+});

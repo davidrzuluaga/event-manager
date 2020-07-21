@@ -33,8 +33,9 @@ const NetworkingPage = props => {
         </span>
       </p>
       <div className="nav">
-        {Object.entries(statuses).map(status => (
+        {Object.entries(statuses).map((status, i) => (
           <div
+            key={i}
             className={`tab ${filterStatus === status[0] && 'selected'}`}
             onClick={() => setFilterStatus(status[0])}
           >
@@ -43,9 +44,9 @@ const NetworkingPage = props => {
         ))}
       </div>
       <div className="appointments">
-        {filteredEventAnalytics().map(meet => (
+        {filteredEventAnalytics().map((meet, i) => (
           <Card className="appointment">
-            <p className="info">
+            <p className="info" key={i}>
               <span className="owner">Meeting schedule by {meet.owner}</span>
               <span className={`status ${meet.status}`}>
                 {statuses[meet.status]}

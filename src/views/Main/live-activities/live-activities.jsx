@@ -9,6 +9,7 @@ const LiveActivities = props => {
         props.activities.map((activity, index) => (
           <>
             <div
+              key={index}
               className="event"
               onClick={() => props.setPage({ page: 1, index })}
             >

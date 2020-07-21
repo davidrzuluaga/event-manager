@@ -9,8 +9,8 @@ const Mainpage = props => {
   return (
     <div className="mainpage">
       <div className="col col-half">
-        {props.information.snacks.map(info => (
-          <Snackbar information={info.content} color={info.color} />
+        {props.information.snacks.map((info, i) => (
+          <Snackbar key={i} information={info.content} color={info.color} />
         ))}
         <ActiveAttendees />
         <Announcements />
